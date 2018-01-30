@@ -41,38 +41,37 @@
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">WeatherPy</a>
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index">WeatherPlotsSite</a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <!-- <li class="active"> -->
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="comparison" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots <span class="caret"></span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="temperature">Lat vs Temperature</a>
+                        <a class="dropdown-item" href="windspeed">Lat vs Windspeed</a>
+                        <a class="dropdown-item" href="humidty">Lat vs Humidity</a>
+                        <a class="dropdown-item" href="cloudiness">Lat vs Cloudiness</a>
+                      </div>
+                  </li>
+              <li><a href="comparison">Comparison</a></li>
+              <li><a href="data">Data</a></li>
+              <!-- </li> -->
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active">
-            <li class="dropdown">
-              <a href="comparison.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="comparison/temperature.html">Lat vs. Temp.</a></li>
-                <li><a href="comparison/humidity.html">Lat vs. Humidity</a></li>
-                <li><a href="comparison/wind-speed.html">Lat vs. Wind Speed</a></li>
-                <li><a href="comparison/cloudiness.html">Lat vs. Cloudiness</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="data.html">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-            <li><a href="comparison.html">Comparison</a></li>
-            <li><a href="data.html">Data</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+      </nav>
 
     <!-- Begin page content -->
     <!-- <div class="container">
@@ -102,18 +101,18 @@
                 <div class="row">
                     <div class="col-lg-6">
                       <h5>Lat vs. Temp</h5>
-                      <a href ="temperature.html"><img src="images/TemperatureInWorldCities.png" alt="Temp Vs. Lat Plot" class="img-thumbnail"></a></div> 
+                      <a href ="temperature"><img src="images/TemperatureInWorldCities.png" alt="Temp Vs. Lat Plot" class="img-thumbnail"></a></div> 
                     <div class="col-lg-6" style="border: 1px solid black;">
                       <h5>Lat vs. Windspeed</h5>
-                      <a href ="windspeed.html"><img src="images/WindSpeedInWorldCities.png" alt="Temp Vs. Wind Speed" class="img-thumbnail"></a></div>
+                      <a href ="windspeed"><img src="images/WindSpeedInWorldCities.png" alt="Temp Vs. Wind Speed" class="img-thumbnail"></a></div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <h5>Lat vs. Humidity</h5>
-                        <a href ="humidity.html"><img src="images/HumidityInWorldCities.png" alt="Temp Vs. Lat Plot" class="img-thumbnail"></a></div>
+                        <a href ="humidity"><img src="images/HumidityInWorldCities.png" alt="Temp Vs. Lat Plot" class="img-thumbnail"></a></div>
                     <div class="col-lg-6">
                       <h5>Lat vs. Cloudiness</h5>
-                      <a href ="cloudiness.html"><img src="images/CloudinessInWorldCities.png" alt="Temp Vs. Wind Speed" class="img-thumbnail"></a></div>
+                      <a href ="cloudiness"><img src="images/CloudinessInWorldCities.png" alt="Temp Vs. Wind Speed" class="img-thumbnail"></a></div>
                 </div>
             </div>
     </div>
@@ -132,7 +131,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
