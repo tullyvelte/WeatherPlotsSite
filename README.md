@@ -1,7 +1,8 @@
 # WeatherPlotsSite
-A Bootstrap website to display plots generated from API weather data.
 
-creating a visualization dashboard website using visualizations from past project. 
+https://tullyvelte.github.io/WeatherPlotsSite/
+
+A Bootstrap-based website to create a visualization dashboard displaing plots generated from weather data API used in afro past project. (https://github.com/tullyvelte/RandomWeatherAPI)
 
 In building this dashboard, we'll create individual pages for each plot and a means by which we can navigate between them. These pages will contain the visualizations and their corresponding explanations. We'll also have a landing page, a page where we can see a comparison of all of the plots, and another page where we can view the data used to build them.
 
